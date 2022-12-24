@@ -1,10 +1,12 @@
-/* HEADER */
+/* BODY */
 
 body {
   font-family: "Raleway", sans-serif;
   color: #213053;
   margin: 0;
 }
+
+/* HEADER */
 
 header {
   display: flex;
@@ -76,7 +78,7 @@ button:hover {
   }
 }
 
-/* SECTION 1 */
+/* SECTION 1 features*/
 .features {
   background-color: #fff;
   padding: 115px 60px;
@@ -173,7 +175,7 @@ button:hover {
   font-size: 15px;
   margin-left: 5px;
 }
-/* SECTION 3 */
+/* SECTION 2 promo*/
 
 .promo {
   display: flex;
@@ -207,7 +209,7 @@ button:hover {
   }
 }
 
-/* SECTION 3 */
+/* SECTION 3 form*/
 
 .about {
   display: flex;
