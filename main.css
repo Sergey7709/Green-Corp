@@ -1,7 +1,7 @@
 /* BODY */
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #213053;
   margin: 0;
 }
@@ -40,8 +40,19 @@ header a {
 
 /* SECTION about */
 
+.about {
+  position: relative;
+}
+
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+}
+
 button {
-  font-family: "Raleway", sans—serif;
+  font-family: 'Raleway', sans—serif;
   font-size: 15px;
   color: #fff;
   background-color: #23a030;
@@ -144,7 +155,7 @@ button:hover {
 }
 
 .promo__text p::before {
-  content: "";
+  content: '';
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -217,7 +228,7 @@ button:hover {
   align-items: center;
   padding-top: 115px;
   padding-bottom: 115px;
-  background: url("img/back.png") no-repeat;
+  background: url('img/back.png') no-repeat;
   background-position: center;
   background-size: cover;
 }
