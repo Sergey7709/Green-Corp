@@ -74,13 +74,13 @@ window.addEventListener('scroll', updateScroll);
 //! функция, добавляющая тэгу "а" обработчик
 
 function addSmoothScroll(anchor) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth',
-    });
-  });
+  anchor.addEventListener('click', onLinkClick);
+  // anchor.addEventListener('click', function (e) {
+  //   e.preventDefault();
+  //   document.querySelector(this.getAttribute('href')).scrollIntoView({
+  //     behavior: 'smooth',
+  //   });
+  // });
 }
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -89,12 +89,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 //! Вызов функции addSmoothScroll для элемента кнопки "Узнать подробнее"
 addSmoothScroll(document.querySelector('.more-button'));
+// addSmoothScroll(document.querySelector('.test'));
 
 //! функция обработчик клика:
 
 function onLinkClick(event) {
   event.preventDefault();
-
   document.querySelector(event.target.getAttribute('href')).scrollIntoView({
     behavior: 'smooth',
   });
